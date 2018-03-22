@@ -125,27 +125,7 @@ class categorymodel extends CI_Model{
         }
     }
     
-//    public function delete($categoryId){
-//         try {
-//                $this->db->trans_begin();
-//                $data = array(
-//                                'is_active' => 'N',
-//                            );
-//                $this->db->where("category_id",$categoryId);
-//                $this->db->update('product_category', $data);
-//                
-//                if ($this->db->trans_status() === FALSE) {
-//                    $this->db->trans_rollback();
-//                    return FALSE;
-//                } else {
-//                    $this->db->trans_commit();
-//                    return TRUE;
-//                }
-//        } catch (Exception $ex) {
-//             $this->db->trans_rollback();
-//             return FALSE;
-//        }
-//    }
+
     public function updateStatus($categoryId,$status){
              try {
                  $updtStatus='';
