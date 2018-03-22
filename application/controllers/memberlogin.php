@@ -74,6 +74,10 @@ class memberlogin extends CI_Controller {
      );
      $this->memberloginmodel->userLoginUpdate($userId,$userData);
  }
+ /**
+  * Ip address tracking
+  * @return type
+  */
 private  function getRealIpAddr()
 {
     if (!empty($_SERVER['HTTP_CLIENT_IP']))   //check ip from share internet
